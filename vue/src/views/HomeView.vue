@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <DestCard v-for="item in items" :key="items.name" :item="item"/>
+  <div class="container2">
+    <DestCard v-for="item in items" :key="items.name" :item="item" />
   </div>
 </template>
 
@@ -79,4 +79,19 @@ const items = [
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  background-color: rgb(204, 127, 255);
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 400px;
+  border-radius: 5px;
+  border:1px solid black;
+}
+.container2{
+  align-items: center;
+  justify-content:space-around;
+}
+</style>
