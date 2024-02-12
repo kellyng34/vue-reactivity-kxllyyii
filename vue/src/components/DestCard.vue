@@ -1,8 +1,10 @@
 <template>
+<h1 ></h1>
     <div class="container">
         <h2>{{ item.name }}</h2>
         <img :src="item.pic" alt="">
         <p>{{ item.price }}</p>
+        <button class="btn"> Add to Bowl </button>
 
     
     </div>

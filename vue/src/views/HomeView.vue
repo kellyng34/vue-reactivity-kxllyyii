@@ -10,25 +10,25 @@ import DestCard from "@/components/DestCard.vue";
 const bowl = "https://banner2.cleanpng.com/20180411/cde/kisspng-ice-cream-sundae-dessert-mississippi-mud-pie-cup-cereal-bowl-5acd95ee896290.2300234915234227025627.jpg"
 const items = [
   {
-    name: "strawberry icecream",
+    name: "strawberry ice cream",
     price: "$3",
     category: "ice cream",
     pic: "https://static.wixstatic.com/media/b2b081_7284a33242104ed28953e4ea0760a997~mv2.png/v1/fill/w_371,h_260,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/strawberry_fields_edited.png",
   },
   {
-    name: "vanilla icecream",
+    name: "vanilla ice cream",
     price: "$3",
     category: "ice cream",
     pic: "https://static.wixstatic.com/media/b2b081_d85873ddf9e9442aa509a469df59ef74~mv2.png/v1/fill/w_372,h_260,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/vanilla_volcano_edited.png",
   },
   {
-    name: "chocolate icecream",
+    name: "chocolate ice cream",
     price: "$3",
     category: "ice cream",
     pic: "https://static.wixstatic.com/media/b2b081_c7efff06b4e9466c804ba96bb449a3ff~mv2.png/v1/fill/w_338,h_237,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/award_winning_chocolate_edited.png",
   },
   {
-    name: "cookie dough icecream",
+    name: "cookie dough ice cream",
     price: "$3",
     category: "ice cream",
     pic: "https://static.wixstatic.com/media/b2b081_4ac5214d684d426e99ee24c12c6a7485~mv2.png/v1/fill/w_392,h_273,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cookie_doughlicious_edited.png",
@@ -81,17 +81,17 @@ const items = [
 
 <style scoped>
 .container {
-  background-color: rgb(204, 127, 255);
+  background-color: rgb(236, 165, 233);
   justify-content:space-around;
   align-items: center;
   text-align: center;
   display: flex;
-  width: 400px;
+  width: 600px;
   border-radius: 5px;
   border:1px solid black;
 }
 .container2{
-  align-items: center;
+  align-items:center;
   justify-content:space-around;
 }
 </style>
