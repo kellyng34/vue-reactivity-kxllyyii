@@ -2,10 +2,14 @@
   <div class="container2">
     <DestCard v-for="item in items" :key="items.name" :item="item" />
   </div>
+<div class="cart">
+    <Cart/>
+</div>
 </template>
 
 <script setup>
 import DestCard from "@/components/DestCard.vue";
+import Cart from "@/components/Cart.vue";
 
 const bowl = "https://banner2.cleanpng.com/20180411/cde/kisspng-ice-cream-sundae-dessert-mississippi-mud-pie-cup-cereal-bowl-5acd95ee896290.2300234915234227025627.jpg"
 const items = [
@@ -80,16 +84,6 @@ const items = [
 </script>
 
 <style scoped>
-.container {
-  background-color: rgb(236, 165, 233);
-  justify-content:space-around;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  width: 600px;
-  border-radius: 5px;
-  border:1px solid black;
-}
 .container2{
   align-items:center;
   justify-content:space-around;
