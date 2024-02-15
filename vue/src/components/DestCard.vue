@@ -11,6 +11,7 @@
 <script setup>
 const props = defineProps({
     item: Object
+    
 })
 
 </script>
@@ -21,15 +22,21 @@ img{
   height: 160px;
 }
 .container {
-  background-color: rgb(245, 192, 242);
+  background-color:antiquewhite;
   justify-content:space-around;
-  align-items: center;
+  align-items:center;
   text-align: center;
   display: flex;
   width: 600px;
+  height: 200px;
   border-radius: 5px;
   border:1px solid black;
   offset-distance: 40%;
 }
 
+.btn{
+  height: 100px;
+  background-color:rgb(250, 241, 230);
+  width: auto;
+}
 </style>
