@@ -4,14 +4,13 @@
         <h2>{{ item.name }}</h2>
         <img :src="item.pic" alt="">
         <p>{{ item.price }}</p>
-        <button class="btn"> Add to Bowl </button>
+        <button @click="addToCard(item)" class="btn"> Add to Bowl </button>
     </div>
 </template>
 
 <script setup>
 const props = defineProps({
-    item: Object
-    
+    item: Objects
 })
 
 </script>

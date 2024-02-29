@@ -1,19 +1,16 @@
 <template>
-From A: {{ store.count }}
   <div class="container2">
     <DestCard v-for="item in items" :key="items.name" :item="item" />
   </div>
 <div class="cart">
-    <ShopCart/>
+    <ShopCart :cart="cart"/>
 </div>
 </template>
 
 <script setup>
 import DestCard from "@/components/DestCard.vue";
 import ShopCart from "@/components/ShopCart.vue";
-import { store } from './store.js'
 
-const bowl = "https://banner2.cleanpng.com/20180411/cde/kisspng-ice-cream-sundae-dessert-mississippi-mud-pie-cup-cereal-bowl-5acd95ee896290.2300234915234227025627.jpg"
 const items = [
   {
     name: "strawberry ice cream",
