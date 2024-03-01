@@ -1,5 +1,11 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-  cart: []
+  items: [],
+  addCart(item){
+    this.items.push(item)
+  }
+})
+export const state = reactive({
+  count: 0,
 })

@@ -4,15 +4,23 @@
         <h2>{{ item.name }}</h2>
         <img :src="item.pic" alt="">
         <p>{{ item.price }}</p>
-        <button @click="addToCard(item)" class="btn"> Add to Bowl </button>
+        <button @click="addToCard" class="btn"> Add to Bowl </button>
     </div>
 </template>
 
 <script setup>
+import { store } from "@/stores/store";
+import { state } from "@/stores/store";
+
+
 const props = defineProps({
-    item: Objects
+ item:Object
 })
 
+function addToCard(){
+  store.addCart(props.item)
+  state.count += props.item.price
+}
 </script>
 
 <style sscoped>
@@ -38,4 +46,5 @@ img{
   background-color:rgb(250, 241, 230);
   width: auto;
 }
+
 </style>

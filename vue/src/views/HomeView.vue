@@ -1,6 +1,8 @@
 <template>
+<h2 class="header">HI</h2>
   <div class="container2">
-    <DestCard v-for="item in items" :key="items.name" :item="item" />
+    <DestCard v-for="item in items" :key="item.name" :item="item" />
+    
   </div>
 <div class="cart">
     <ShopCart :cart="cart"/>
@@ -10,7 +12,7 @@
 <script setup>
 import DestCard from "@/components/DestCard.vue";
 import ShopCart from "@/components/ShopCart.vue";
-
+//
 const items = [
   {
     name: "strawberry ice cream",
@@ -86,5 +88,10 @@ const items = [
 .container2{
   align-items:center;
   justify-content:space-around;
+}
+
+.header{
+  font-size: 40px;
+  text-align: center;
 }
 </style>
