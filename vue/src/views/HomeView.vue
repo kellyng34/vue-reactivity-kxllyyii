@@ -1,5 +1,5 @@
 <template>
-<h2 class="header">HI</h2>
+<h2 class="header">Make Your Own Ice Cream</h2>
   <div class="container2">
     <DestCard v-for="item in items" :key="item.name" :item="item" />
     
