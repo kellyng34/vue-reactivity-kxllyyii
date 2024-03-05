@@ -24,6 +24,7 @@ import { store } from "@/stores/store";
 function remove(item) {
     const thingIndex = store.thing.indexOf(item);
     store.thing.splice(thingIndex, 1);
+    store.total = store.total - item.price
     console.log(store.thing)
 }
 

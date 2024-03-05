@@ -19,6 +19,7 @@ const props = defineProps({
 const addToCard= function(item){
   store.thing.push(item)
   store.total = store.total + item.price
+  console.log(store.total)
 }
 
 </script>
