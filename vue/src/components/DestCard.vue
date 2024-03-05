@@ -3,7 +3,7 @@
     <div class="container">
         <h2>{{ item.name }}</h2>
         <img :src="item.pic" alt="">
-        <p>{{ item.price }}</p>
+        <p>${{ item.price }}</p>
         <button @click="addToCard(item)" class="btn"> Add to Bowl </button>
     </div>
 </template>
@@ -16,8 +16,9 @@ const props = defineProps({
  item:Object
 })
 
-const addToCard= function(list){
-  store.thing.push(list)
+const addToCard= function(item){
+  store.thing.push(item)
+  store.total = store.total + item.price
 }
 
 </script>
